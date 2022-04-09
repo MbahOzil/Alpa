@@ -24,9 +24,9 @@ $deviceid= "$random1-936d-974b-a9ef-$random2$random3";
 $deviceid2 = "\"$deviceid\"";
 echo "\n";
 echo "\n";
-echo "| BELANJA PUAS DUIT AMBLAS !! \n";
-echo "| Simpel Script KILAT \n";
-echo "| Hajas Bor Sampe Saldo ATM lu Abiss \n";
+echo "| ALFAGIFT REGISTER !! \n";
+echo "| GARAPAN CUAN \n";
+echo "| Hajaaarr Sampek Luberr \n";
 echo "| --------------------------- \n";
 if(file_exists("config.json")){
     $arr2 = json_decode(file_get_contents('config.json'), true);
@@ -97,7 +97,7 @@ $random_name = "Koko"." ".substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGH
 $random_email = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 7);
 $random_name = "\"$random_name\"";
 $random_email = "\"$random_email@gmail.com\"";
-$data_create = '{"address":"","birthDate":"1996-03-23","debug":false,"deviceId":'.$deviceid2.',"email":'.$random_email.',"firstName":"","fullName":'.$random_name.',"gender":"F","lastName":"","latitude":0,"longitude":0,"maritalStatus":"M","password":"Straight23","phone":'.$nomorhp.',"postCode":"","registerPonta":true,"token":'.$token2.'}';
+$data_create = '{"address":"","birthDate":"1996-03-23","debug":false,"deviceId":'.$deviceid2.',"email":'.$random_email.',"firstName":"","fullName":'.$random_name.',"gender":"F","lastName":"","latitude":0,"longitude":0,"maritalStatus":"M","password":"12345ajah","phone":'.$nomorhp.',"postCode":"","registerPonta":true,"token":'.$token2.'}';
 $create_akun = curl($url_daftar,$header_otp,$data_create);
 $put = file_put_contents('createakunalfa.txt',$create_akun);
 $create_akun = json_decode($create_akun,true);
@@ -114,7 +114,7 @@ if($status_create !== "00"){
     $id_ponta = $create_akun['member']['ponta']['accountCard'];
     $no_hp = $create_akun['member']['ponta']['phoneNumber'];
     echo "| Sukses daftar!!! \n";
-    echo "| Nomer hp $no_hp dan password HajasBor \n";
+    echo "| Nomer hp $no_hp dan password 12345ajah \n";
     echo "| Member Ponta $id_ponta \n";
     echo "| Loading voucher \n";
     sleep(4);
