@@ -24,14 +24,14 @@ $deviceid= "$random1-936d-974b-a9ef-$random2$random3";
 $deviceid2 = "\"$deviceid\"";
 echo "\n";
 echo "\n";
-echo "\e[94m GROUP SEKEER MAK CICI \n";
+echo "\e[94m GROUP TEAM MONEY SEEKER's \n";
 echo "| --------------------------- \n";
 if(file_exists("config.json")){
     $arr2 = json_decode(file_get_contents('config.json'), true);
     $token = $arr2['token'];
     $memberid = $arr2['id'];
     $hp = $arr2['hp'];
-    echo "| Nomer sudah terdaftar cukk..!!! $hp \n";
+    echo "| GASPOL JANGAN KENDOR CUKK.. !! $hp \n";
  goto daftar;
     
 }
@@ -91,7 +91,7 @@ $random_name = "Amir"." ".substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGH
 $random_email = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 7);
 $random_name = "\"$random_name\"";
 $random_email = "\"$random_email@gmail.com\"";
-$data_create = '{"address":"","birthDate":"1991-10-11","debug":false,"deviceId":'.$deviceid2.',"email":'.$random_email.',"firstName":"","fullName":'.$random_name.',"gender":"F","lastName":"","latitude":0,"longitude":0,"maritalStatus":"M","password":"sekar0116","phone":'.$nomorhp.',"postCode":"","registerPonta":true,"token":'.$token2.'}';
+$data_create = '{"address":"","birthDate":"1991-10-11","debug":false,"deviceId":'.$deviceid2.',"email":'.$random_email.',"firstName":"","fullName":'.$random_name.',"gender":"F","lastName":"","latitude":0,"longitude":0,"maritalStatus":"M","password":"gaspol212","phone":'.$nomorhp.',"postCode":"","registerPonta":true,"token":'.$token2.'}';
 $create_akun = curl($url_daftar,$header_otp,$data_create);
 $put = file_put_contents('createakunalfa.txt',$create_akun);
 $create_akun = json_decode($create_akun,true);
@@ -109,7 +109,7 @@ if($status_create !== "00"){
     $no_hp = $create_akun['member']['ponta']['phoneNumber'];
     echo "| Sukses MENDAFTAR CROTTTT...!!! \n";
     echo "| Nomer hp $no_hp \n";
-    echo "| Paswordnya : sekar0116 \n";
+    echo "| Paswordnya : gaspol212 \n";
     echo "| Member Ponta $id_ponta \n";
     echo "| Loading voucher \n";
     sleep(4);
