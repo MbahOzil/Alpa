@@ -31,7 +31,7 @@ if(file_exists("config.json")){
     $token = $arr2['token'];
     $memberid = $arr2['id'];
     $hp = $arr2['hp'];
-    echo "| GASPOL JANGAN KENDOR CUKK.. !! $hp \n";
+    echo "| GASPOL JANGAN KENDOR CUKK.. !! \n";
  goto daftar;
     
 }
